@@ -1,0 +1,60 @@
+table {
+  /*border-collapse: separate; Separa as linhas mas só funciona com 1px*/
+  border-collapse: collapse;
+  /*width: 100%;*/
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+
+  /*font-weight: bold;*/
+  /* comentario */
+}
+
+th,
+td {
+  font-size: 15px;
+  padding: 10px 15px 10px 15px;
+  vertical-align: middle;
+}
+
+thead {
+  background: rgb(41, 0, 128);
+  color: white;
+  font-size: 20px;
+}
+
+th:first-child {
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background: f0f0f2;
+}
+
+td {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+td:first-child {
+  border-left: 1px solid black;
+}
+
+tfoot td:last-child {
+  text-align: right;
+}
+tfoot {
+  text-align: right;
+  background-color: white;
+}
+
+.item-price {
+  text-align: right;
+}
+
+.item-stock {
+  text-align: center;
+}
+
+.item-quantity {
+  text-align: center;
+}
