@@ -1,29 +1,38 @@
 table {
   /*border-collapse: separate; Separa as linhas mas só funciona com 1px*/
   border-collapse: collapse;
-  /*width: 100%;*/
+  border-spacing: 0;
+  color: #4a4a4d;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 30px;
-
+  font-size: 14px;
   /*font-weight: bold;*/
   /* comentario */
 }
 
 th,
 td {
-  font-size: 15px;
-  padding: 10px 15px 10px 15px;
+  border: 1px solid black;
+  padding: 10px 15px;
   vertical-align: middle;
 }
 
 thead {
-  background: rgb(41, 0, 128);
-  color: white;
-  font-size: 20px;
+  border: 1px solid black;
+  background: #395870;
+  background: linear-gradient(#49708f, #293f50);
+  color: #fff;
+  font-size: 11px;
+text-transform: uppercase;
 }
 
 th:first-child {
+  border-top-left-radius: 5px;
   text-align: left;
+  
+}
+
+th:last-child {
+  border-top-right-radius: 5px;
 }
 
 tbody tr:nth-child(even) {
@@ -31,30 +40,52 @@ tbody tr:nth-child(even) {
 }
 
 td {
-  border-bottom: 1px solid black;
-  border-right: 1px solid black;
+  border-bottom: 1px solid #cecfd5;
+  border-right: 1px solid #cecfd5;
 }
 
 td:first-child {
-  border-left: 1px solid black;
+  border-left: 1px solid #cecfd5;
+
+  }
+
+.book-title {
+  color: #395870;
+  font-size: 12px;
 }
 
-tfoot td:last-child {
-  text-align: right;
+.text-offset {
+  color: #7c7c80;
+  font-size: 12px;
 }
-tfoot {
-  text-align: right;
-  background-color: white;
+
+.item-stock,
+.item-quantity {
+  text-align: center;
 }
 
 .item-price {
   text-align: right;
 }
 
-.item-stock {
-  text-align: center;
+.item-multiple {
+  display: block;
 }
 
-.item-quantity {
-  text-align: center;
+tfoot {
+  text-align: right;
+}
+
+tfoot tr:last-child {
+  background: #f0f0f2;
+  color: #395870;
+  font-weight: bold;
+}
+
+tfoot tr:last-child td:first-child {
+  border-bottom-left-radius: 5px;
+}
+
+tfoot tr:last-child td:last-child {
+  border-bottom-right-radius: 5px;
 }
